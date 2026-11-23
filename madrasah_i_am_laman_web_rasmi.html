@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="ms" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+  <title>Madrasah I AM — Kurikulum Kesedaran Yaqazah &amp; Qalbun Salim</title>
+  <meta name="description" content="Sekolah kesedaran diri yang menyatukan Neurosains Moden, Regulasi Sistem Saraf (Biofeedback HRV), dan Tuntutan Wahyu Al-Quran melalui 80% latihan praktikal di Melaka." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            emeraldDeep: '#062C22',
+            emeraldCard: '#0B3B2E',
+            emeraldLight: '#134E3E',
+            goldSoft: '#D4AF37',
+            goldLight: '#F3E5AB',
+            ivory: '#FAF8F5',
+            charcoal: '#1E293B'
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            arabic: ['"Amiri"', 'serif']
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .hero-pattern {
+      background-color: #062C22;
+      background-image: radial-gradient(circle at 80% 20%, rgba(212, 175, 55, 0.14) 0%, transparent 45%),
+                        radial-gradient(circle at 15% 80%, rgba(19, 78, 62, 0.8) 0%, transparent 50%);
+    }
+  </style>
+</head>
+<body class="bg-ivory text-charcoal font-sans antialiased selection:bg-goldSoft selection:text-emeraldDeep overflow-x-hidden">
+
+  <!-- ==================== 1. NAVIGASI UTAMA MELEKAT ==================== -->
+  <header class="sticky top-0 z-50 bg-emeraldDeep/95 backdrop-blur-md border-b border-emeraldLight/60 text-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-3.5 flex items-center justify-between">
+      <a href="#utama" class="flex items-center gap-3">
+        <div class="w-9 h-9 rounded-lg bg-goldSoft/20 border border-goldSoft flex items-center justify-center text-goldSoft font-bold text-sm tracking-tight">
+          I AM
+        </div>
+        <div>
+          <span class="font-bold tracking-wide text-base sm:text-lg block leading-none">MADRASAH I AM</span>
+          <span class="text-[11px] text-goldLight/80 tracking-widest uppercase">Sekolah Kesedaran Yaqazah</span>
+        </div>
+      </a>
+
+      <!-- Menu Desktop -->
+      <nav class="hidden lg:flex items-center gap-6 text-sm font-medium text-emerald-100">
+        <a href="#kesedaran" class="hover:text-goldSoft transition">Kesedaran Awal</a>
+        <a href="#tentang" class="hover:text-goldSoft transition">Salasilah &amp; Adab</a>
+        <a href="#kurikulum" class="hover:text-goldSoft transition">Kurikulum 4 Tahap</a>
+        <a href="#kuiz" class="hover:text-goldSoft transition">Semakan Kendiri</a>
+        <a href="#daftar" class="hover:text-goldSoft transition">Jadual &amp; Daftar</a>
+      </nav>
+
+      <!-- Butang Tindakan Kanan & Menu Mobile -->
+      <div class="flex items-center gap-2.5">
+        <a href="#daftar"
+           class="px-4 py-2 rounded-lg text-xs sm:text-sm font-bold bg-goldSoft text-emeraldDeep hover:bg-goldLight transition shadow-sm">
+          Sertai Bengkel
+        </a>
+        <button id="mobileMenuBtn" type="button" aria-label="Buka Menu"
+                class="lg:hidden p-2 rounded-lg border border-emeraldLight text-goldLight hover:bg-emeraldCard transition">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Dropdown Menu Mobile -->
+    <div id="mobileMenu" class="hidden lg:hidden bg-emeraldCard border-t border-emeraldLight px-4 pt-3 pb-5 space-y-2 text-sm">
+      <a href="#kesedaran" class="mobile-nav-link block py-2 px-3 rounded-lg text-emerald-100 hover:bg-emeraldDeep hover:text-goldSoft">Kesedaran Awal</a>
+      <a href="#tentang" class="mobile-nav-link block py-2 px-3 rounded-lg text-emerald-100 hover:bg-emeraldDeep hover:text-goldSoft">Salasilah &amp; Adab</a>
+      <a href="#kurikulum" class="mobile-nav-link block py-2 px-3 rounded-lg text-emerald-100 hover:bg-emeraldDeep hover:text-goldSoft">Kurikulum 4 Tahap</a>
+      <a href="#kuiz" class="mobile-nav-link block py-2 px-3 rounded-lg text-emerald-100 hover:bg-emeraldDeep hover:text-goldSoft">Semakan Kendiri</a>
+      <a href="#daftar" class="mobile-nav-link block py-2 px-3 rounded-lg text-emerald-100 hover:bg-emeraldDeep hover:text-goldSoft">Jadual &amp; Daftar</a>
+    </div>
+  </header>
+
+  <!-- ==================== 2. SEKSYEN HERO ==================== -->
+  <section id="utama" class="hero-pattern text-white py-16 sm:py-24 px-4 sm:px-6 border-b border-emeraldLight">
+    <div class="max-w-4xl mx-auto text-center">
+      <span class="inline-block px-3.5 py-1 rounded-full text-xs font-semibold tracking-wider uppercase bg-emeraldLight/80 text-goldLight border border-goldSoft/30 mb-6">
+        80% Latihan Praktikal &bull; 20% Kefahaman Teras
+      </span>
+
+      <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight leading-tight mb-6">
+        Berhenti Hidup dalam Mod <span class="text-goldSoft italic">'Autopilot'</span>.<br class="hidden sm:inline" />
+        Bangkit (<span class="text-goldLight">Yaqazah</span>) &amp; Pulang Membawa <span class="text-goldSoft">Qalbun Salim</span>.
+      </h1>
+
+      <p class="text-base sm:text-lg text-emerald-100/90 max-w-2xl mx-auto leading-relaxed mb-8">
+        Sebuah sekolah kesedaran diri yang menyatukan <strong>Neurosains Moden</strong>, <strong>Regulasi Sistem Saraf (Biofeedback HRV)</strong>, dan <strong>Tuntutan Wahyu Al-Quran</strong> untuk memulihkan fitrah jasad, akal, dan <em>qalb</em>.
+      </p>
+
+      <!-- Kotak Kaligrafi Munajat Teras -->
+      <div class="max-w-xl mx-auto bg-emeraldCard/80 border border-goldSoft/40 rounded-2xl p-5 sm:p-6 mb-9 shadow-lg">
+        <p class="font-arabic text-2xl sm:text-3xl text-goldSoft mb-2 leading-loose" dir="rtl" lang="ar">
+          إِلٰهِي أَنْتَ مَقْصُوْدِي وَرِضَاكَ مَطْلُوْبِي
+        </p>
+        <p class="text-xs sm:text-sm font-semibold text-goldLight tracking-wide">
+          Ilahi Anta Maqsudi Wa Ridhaka Matlubi
+        </p>
+        <p class="text-xs text-emerald-200/80 mt-1">
+          “Tuhanku, Engkaulah maksudku dan keredhaan-Mu yang aku cari.”
+        </p>
+      </div>
+
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-3.5">
+        <a href="#daftar"
+           class="w-full sm:w-auto px-7 py-3.5 rounded-xl bg-goldSoft text-emeraldDeep font-bold text-sm sm:text-base hover:bg-goldLight transition shadow-md">
+          Daftar Program Intensif Dua Hari
+        </a>
+        <a href="#kuiz"
+           class="w-full sm:w-auto px-7 py-3.5 rounded-xl bg-emeraldLight/70 border border-emerald-500/40 text-white font-semibold text-sm sm:text-base hover:bg-emeraldLight transition">
+          Semakan Kendiri: Di Mana Tahap Anda?
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 3. SEKSYEN KESEDARAN AWAL & VIDEO 1 (BUYA HAMKA: E884Uk7E7Xc) ==================== -->
+  <section id="kesedaran" class="py-16 sm:py-20 px-4 sm:px-6 max-w-6xl mx-auto">
+    <div class="grid lg:grid-cols-12 gap-10 items-center">
+      <div class="lg:col-span-6 space-y-5">
+        <span class="text-xs font-bold uppercase tracking-widest text-emerald-800 bg-emerald-100 px-3 py-1 rounded-md">
+          Ketukan Kesedaran (Yaqazah)
+        </span>
+        <h2 class="text-2xl sm:text-4xl font-extrabold text-emeraldDeep leading-snug">
+          Mengapa Ramai Orang Berilmu Masih Merasa Gelisah dan Kosong?
+        </h2>
+        <p class="text-slate-700 leading-relaxed">
+          Kajian neurosains mendapati hampir <strong>50% waktu jaga</strong> manusia dihabiskan dalam lamunan fikiran tanpa sedar (<em>Default Mode Network</em>). Jasad kita bergerak melakukan rutin harian, tetapi jiwa kita melayang jauh daripada kehadiran Tuhan — keadaan yang diperingatkan Al-Quran sebagai <strong><em>Fahum Ghāfilūn</em></strong> (Surah Yasin: 5–6).
+        </p>
+        <p class="text-slate-700 leading-relaxed">
+          Ilmu yang sekadar berhenti sebagai maklumat di kepala tidak mampu menenangkan jiwa yang resah. Tonton kisah penginsafan ulama besar Nusantara ini untuk memahami mengapa perjalanan pulang kepada Allah memerlukan <strong>ilmu yang benar-benar dirasai di dalam <em>qalb</em></strong>.
+        </p>
+        <div class="p-4 rounded-xl bg-amber-50 border-l-4 border-goldSoft text-sm text-slate-800">
+          <strong>Prinsip Sekolah:</strong> Di Madrasah I AM, kami menunjukkan peta perjalanan secara telus, namun pengalaman rasa dan perubahan saraf hanya berlaku apabila anda mengalaminya sendiri dalam sesi amali.
+        </div>
+      </div>
+
+      <!-- Pemain Terbenam Video 1: Kisah Bukan HAMKA, tetapi HAMPA (E884Uk7E7Xc) -->
+      <div class="lg:col-span-6">
+        <div class="bg-emeraldDeep rounded-2xl overflow-hidden shadow-xl border border-emeraldLight">
+          <div class="aspect-video w-full bg-black relative overflow-hidden">
+            <iframe
+              class="w-full h-full"
+              src="https://www.youtube.com/embed/E884Uk7E7Xc?rel=0"
+              title="Kisah Bukan HAMKA, tetapi HAMPA - Madrasah I AM"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen>
+            </iframe>
+          </div>
+          <div class="p-4 sm:p-5 bg-emeraldCard text-white space-y-2">
+            <div class="flex items-center justify-between gap-2">
+              <span class="text-[11px] uppercase tracking-widest text-goldLight font-semibold">
+                Video Renungan Pembuka
+              </span>
+              <a href="https://youtu.be/E884Uk7E7Xc" target="_blank" rel="noopener noreferrer"
+                 class="text-xs font-semibold text-goldSoft hover:text-goldLight underline">
+                Buka di YouTube &rarr;
+              </a>
+            </div>
+            <h3 class="text-base sm:text-lg font-bold text-white">
+              “Sebenarnya Saya Bukan HAMKA, Tetapi HAMPA”
+            </h3>
+            <p class="text-xs text-emerald-200/85 leading-relaxed">
+              Kisah pertemuan Buya Hamka bersama Guru Mursyid Abah Anom: Perbezaan antara ilmu sebatas informasi di akal berbanding ilmu yang hidup di dalam <em>qalb</em>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 4. SEKSYEN SALASILAH 40 TAHUN & UNTAIAN MUTIARA ==================== -->
+  <section id="tentang" class="py-16 sm:py-20 px-4 sm:px-6 bg-white border-y border-slate-200/80">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center max-w-3xl mx-auto mb-14">
+        <span class="text-xs font-bold uppercase tracking-widest text-emerald-800 bg-emerald-100 px-3 py-1 rounded-md">
+          Salasilah &amp; Adab Penuntut Ilmu
+        </span>
+        <h2 class="text-2xl sm:text-4xl font-extrabold text-emeraldDeep mt-3">
+          Daripada Cita-Cita <em>Master Mariner</em> ke Sekolah Penyucian Hati
+        </h2>
+        <p class="text-slate-600 mt-3 leading-relaxed">
+          Madrasah I AM diasaskan di Melaka sebagai sebuah <strong>“sekolah”</strong> terbuka — tempat pengasas, pembimbing, dan setiap peserta sama-sama terus belajar mendidik jiwa pulang kepada fitrah.
+        </p>
+      </div>
+
+      <!-- Garis Masa 4 Fasa -->
+      <div class="grid md:grid-cols-4 gap-6 mb-16">
+        <div class="bg-ivory p-6 rounded-2xl border border-slate-200 shadow-sm">
+          <span class="inline-block text-xs font-extrabold text-goldSoft bg-emeraldDeep px-2.5 py-1 rounded mb-3">
+            01 &bull; 40 Tahun Lalu
+          </span>
+          <h3 class="font-bold text-lg text-emeraldDeep mb-2">Di Ambang Maut di Selat Hormuz</h3>
+          <p class="text-sm text-slate-600 leading-relaxed">
+            Bermula sebagai pegawai navigasi muda mengejar sijil <em>Master Mariner</em>. Apabila Perang Iran–Iraq meletus dan kapal disyaki membawa muatan hingga diancam untuk dibom, timbul kesedaran: <em>sijil dunia tidak menyelamatkan jiwa saat berdepan maut.</em>
+          </p>
+        </div>
+
+        <div class="bg-ivory p-6 rounded-2xl border border-slate-200 shadow-sm">
+          <span class="inline-block text-xs font-extrabold text-goldSoft bg-emeraldDeep px-2.5 py-1 rounded mb-3">
+            02 &bull; Di Tengah Samudera
+          </span>
+          <h3 class="font-bold text-lg text-emeraldDeep mb-2">Kitab <em>Ihya' Ulumuddin</em> &amp; Doa</h3>
+          <p class="text-sm text-slate-600 leading-relaxed">
+            Dalam debaran di tengah lautan, dipertemukan dengan kitab <strong><em>Ihya' Ulumuddin</em></strong> karangan Imam Al-Ghazali yang mengajarkan panduan serta doa memohon dipertemukan dengan Guru Mursyid.
+          </p>
+        </div>
+
+        <div class="bg-ivory p-6 rounded-2xl border border-slate-200 shadow-sm">
+          <span class="inline-block text-xs font-extrabold text-goldSoft bg-emeraldDeep px-2.5 py-1 rounded mb-3">
+            03 &bull; Bimbingan Mursyid
+          </span>
+          <h3 class="font-bold text-lg text-emeraldDeep mb-2">Bertemu Abah Anom</h3>
+          <p class="text-sm text-slate-600 leading-relaxed">
+            Doa di samudera dimakbulkan apabila dipertemukan dengan Guru Mursyid, <strong>Syaikh Ahmad Shohibulwafa Tajul Arifin r.a. (Abah Anom)</strong> di Suryalaya — membuka jalan talqin zikir dan penyucian <em>qalb</em>.
+          </p>
+        </div>
+
+        <div class="bg-ivory p-6 rounded-2xl border border-slate-200 shadow-sm">
+          <span class="inline-block text-xs font-extrabold text-goldSoft bg-emeraldDeep px-2.5 py-1 rounded mb-3">
+            04 &bull; Kini di Melaka
+          </span>
+          <h3 class="font-bold text-lg text-emeraldDeep mb-2">Sekolah untuk Terus Belajar</h3>
+          <p class="text-sm text-slate-600 leading-relaxed">
+            Membuktikan komitmen menuntut ilmu sepanjang hayat, pengasas kini merupakan pelajar tahun akhir <strong>Undergraduate dalam Pengajian Islam (<em>Honours in Islamic Management</em>)</strong>—menghimpunkan disiplin akademik, sains saraf, dan pengalaman kerohanian empat dekad di Melaka.
+          </p>
+        </div>
+      </div>
+
+      <!-- Untaian Mutiara: Lima Pesan Utama -->
+      <div class="bg-emeraldDeep text-white rounded-3xl p-7 sm:p-10 shadow-xl">
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 border-b border-emeraldLight pb-6 mb-8">
+          <div>
+            <span class="text-xs font-bold uppercase tracking-widest text-goldSoft">Etika &amp; Perisai Penjaga Hati</span>
+            <h3 class="text-2xl sm:text-3xl font-extrabold mt-1">Untaian Mutiara — Lima Pesan Utama</h3>
+          </div>
+          <p class="text-xs sm:text-sm text-emerald-200 max-w-md">
+            Ukuran sebenar kematangan rohani bukanlah pada banyaknya maklumat di kepala, tetapi apabila hati kekal lembut dan penuh kasih sayang walaupun diuji.
+          </p>
+        </div>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-5 gap-4">
+          <div class="bg-emeraldCard/90 border border-emeraldLight p-5 rounded-2xl">
+            <span class="text-goldSoft font-extrabold text-xl block mb-2">01</span>
+            <h4 class="font-bold text-sm text-goldLight mb-1.5">Jangan membenci kepada ulama yang sezaman</h4>
+            <p class="text-xs text-emerald-100/80 leading-relaxed">Menjaga adab dan penghormatan terhadap para ulama tanpa permusuhan.</p>
+          </div>
+
+          <div class="bg-emeraldCard/90 border border-emeraldLight p-5 rounded-2xl">
+            <span class="text-goldSoft font-extrabold text-xl block mb-2">02</span>
+            <h4 class="font-bold text-sm text-goldLight mb-1.5">Jangan menyalahkan kepada pengajaran orang lain</h4>
+            <p class="text-xs text-emerald-100/80 leading-relaxed">Menghormati pendekatan atau metode pembinaan yang berbeza.</p>
+          </div>
+
+          <div class="bg-emeraldCard/90 border border-emeraldLight p-5 rounded-2xl">
+            <span class="text-goldSoft font-extrabold text-xl block mb-2">03</span>
+            <h4 class="font-bold text-sm text-goldLight mb-1.5">Jangan memeriksa murid orang lain</h4>
+            <p class="text-xs text-emerald-100/80 leading-relaxed">Fokus pada pembersihan diri sendiri, bukan mencampuri urusan pembinaan murid lain.</p>
+          </div>
+
+          <div class="bg-emeraldCard/90 border border-emeraldLight p-5 rounded-2xl">
+            <span class="text-goldSoft font-extrabold text-xl block mb-2">04</span>
+            <h4 class="font-bold text-sm text-goldLight mb-1.5">Jangan mengubah sikap walau disakiti orang</h4>
+            <p class="text-xs text-emerald-100/80 leading-relaxed">Kekal teguh berakhlak baik walaupun menerima layanan yang buruk.</p>
+          </div>
+
+          <div class="bg-emeraldCard/90 border border-emeraldLight p-5 rounded-2xl">
+            <span class="text-goldSoft font-extrabold text-xl block mb-2">05</span>
+            <h4 class="font-bold text-sm text-goldLight mb-1.5">Harus menyayangi orang yang membenci kepadamu</h4>
+            <p class="text-xs text-emerald-100/80 leading-relaxed">Membalas kebencian dengan kasih sayang dan kelapangan hati.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 5. SEKSYEN PETA KURIKULUM 4 TAHAP & 3 STESEN ==================== -->
+  <section id="kurikulum" class="py-16 sm:py-20 px-4 sm:px-6 max-w-6xl mx-auto">
+    <div class="text-center max-w-3xl mx-auto mb-10">
+      <span class="text-xs font-bold uppercase tracking-widest text-emerald-800 bg-emerald-100 px-3 py-1 rounded-md">
+        Peta Perjalanan Program Intensif 2 Hari
+      </span>
+      <h2 class="text-2xl sm:text-4xl font-extrabold text-emeraldDeep mt-3">
+        Empat Tahap Pemulihan &amp; Tiga Stesen Kerohanian
+      </h2>
+      <p class="text-slate-600 mt-3 leading-relaxed">
+        Dalam Program Intensif Dua Hari, peserta tidak sekadar mendengar teori — anda akan <strong>mengukur, menguji, dan merasai sendiri</strong> perubahan daripada pemulihan jasad hingga ke kemuncak penyaksian firman Allah.
+      </p>
+    </div>
+
+    <!-- 3 Stesen Kerohanian -->
+    <div class="grid md:grid-cols-3 gap-4 mb-10">
+      <div class="bg-white border border-slate-200 rounded-2xl p-5 flex items-start gap-4 shadow-sm">
+        <div class="w-10 h-10 rounded-xl bg-emerald-100 text-emeraldDeep font-extrabold flex items-center justify-center shrink-0">S1</div>
+        <div>
+          <span class="text-[11px] font-bold uppercase tracking-wider text-emerald-700">Tahap 1 – 3</span>
+          <h3 class="font-bold text-emeraldDeep text-base">Stesen Assolihin</h3>
+          <p class="text-xs text-slate-600 mt-1">Pemulihan kenderaan jasad, regulasi sistem saraf HRV, benteng zikir &amp; penghayatan Rukun Islam.</p>
+        </div>
+      </div>
+
+      <div class="bg-white border border-slate-200 rounded-2xl p-5 flex items-start gap-4 shadow-sm">
+        <div class="w-10 h-10 rounded-xl bg-amber-100 text-amber-900 font-extrabold flex items-center justify-center shrink-0">S2</div>
+        <div>
+          <span class="text-[11px] font-bold uppercase tracking-wider text-amber-700">Tahap 4 (Tajalli)</span>
+          <h3 class="font-bold text-emeraldDeep text-base">Stesen Syuhada</h3>
+          <p class="text-xs text-slate-600 mt-1">Penyaksian mata hati (<em>basirah</em>) terhadap tanda kebesaran dan kasih sayang Allah di setiap sudut.</p>
+        </div>
+      </div>
+
+      <div class="bg-white border border-slate-200 rounded-2xl p-5 flex items-start gap-4 shadow-sm">
+        <div class="w-10 h-10 rounded-xl bg-emeraldDeep text-goldSoft font-extrabold flex items-center justify-center shrink-0">S3</div>
+        <div>
+          <span class="text-[11px] font-bold uppercase tracking-wider text-emerald-700">Kemuncak Tahap 4</span>
+          <h3 class="font-bold text-emeraldDeep text-base">Stesen Assiddiqin</h3>
+          <p class="text-xs text-slate-600 mt-1">Hati yang bersih, reda, dan tenang (<em>Qalbun Salim</em>) — merasai firman Allah menjadi kenyataan hidup.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tab Interaktif 4 Tahap -->
+    <div class="bg-white rounded-3xl border border-slate-200 shadow-md overflow-hidden">
+      <div class="grid grid-cols-2 sm:grid-cols-4 border-b border-slate-200 bg-slate-50/80" id="tabButtons">
+        <button type="button" onclick="showTab(1)" id="btn-tab-1" class="tab-btn py-4 px-3 text-xs sm:text-sm font-bold border-b-2 border-emeraldDeep text-emeraldDeep bg-white transition">
+          Tahap 1: Jasad
+        </button>
+        <button type="button" onclick="showTab(2)" id="btn-tab-2" class="tab-btn py-4 px-3 text-xs sm:text-sm font-semibold border-b-2 border-transparent text-slate-500 hover:text-emeraldDeep transition">
+          Tahap 2: Saraf (ANS)
+        </button>
+        <button type="button" onclick="showTab(3)" id="btn-tab-3" class="tab-btn py-4 px-3 text-xs sm:text-sm font-semibold border-b-2 border-transparent text-slate-500 hover:text-emeraldDeep transition">
+          Tahap 3: Zikir
+        </button>
+        <button type="button" onclick="showTab(4)" id="btn-tab-4" class="tab-btn py-4 px-3 text-xs sm:text-sm font-semibold border-b-2 border-transparent text-slate-500 hover:text-emeraldDeep transition">
+          Tahap 4: Qalbun Salim &amp; Firman Real
+        </button>
+      </div>
+
+      <!-- KANDUNGAN TAHAP 1 -->
+      <div id="content-tab-1" class="tab-content p-6 sm:p-10 grid lg:grid-cols-12 gap-8 items-center">
+        <div class="lg:col-span-7 space-y-4">
+          <span class="text-xs font-bold uppercase tracking-wider text-emerald-700">Fasa 1 &bull; Pemulihan Kenderaan Jasad</span>
+          <h3 class="text-2xl font-extrabold text-emeraldDeep">Membersihkan “Otak Kedua” &amp; Saluran Darah</h3>
+          <p class="text-sm sm:text-base text-slate-600 leading-relaxed">
+            Usus mengandungi 100 juta sel saraf (<em>“Otak Kedua”</em>) yang mengawal 90% hormon ketenangan (<em>serotonin</em>) dan menghantar 80% isyarat ke otak melalui Saraf Vagus. Ibarat enjin kereta yang perlu diservis minyak hitamnya sebelum dipandu jauh, jasad mesti dibersihkan terlebih dahulu.
+          </p>
+          <ul class="space-y-2.5 text-sm text-slate-700 pt-2">
+            <li class="flex items-start gap-2.5">
+              <span class="text-emerald-700 font-bold">&#10003;</span>
+              <span><strong>4 Teras Pemulihan:</strong> As-Sabr (Lidah Buaya) &amp; Air Tenaga, Minyak Zaitun (EVOO), Madu Lebah Asli, serta senaman harian 30 minit.</span>
+            </li>
+            <li class="flex items-start gap-2.5">
+              <span class="text-emerald-700 font-bold">&#10003;</span>
+              <span><strong>Sesi Ujian Fizikal Langsung (<em>Live Demo</em>):</strong> Saksikan sendiri di dewan bagaimana bahan-bahan Sunnah ini bertindak balas terhadap tenaga elektrik, lemak tepu, dan toksin di hadapan mata anda.</span>
+            </li>
+          </ul>
+        </div>
+        <div class="lg:col-span-5 bg-emeraldDeep text-white rounded-2xl overflow-hidden border border-emeraldLight shadow-lg">
+          <div class="aspect-video w-full bg-black relative overflow-hidden">
+            <iframe
+              class="w-full h-full"
+              src="https://www.youtube.com/embed/wpKy4JvulAY?rel=0&modestbranding=1"
+              title="Usus sebagai Otak Kedua & Analogi Servis Enjin Kereta - Madrasah I AM"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen>
+            </iframe>
+          </div>
+          <div class="p-4 sm:p-5 bg-emeraldCard space-y-2">
+            <div class="flex items-center justify-between gap-2">
+              <span class="text-[11px] uppercase tracking-widest text-goldLight font-semibold">Modul Bimbingan Fizikal</span>
+              <a href="https://youtu.be/wpKy4JvulAY" target="_blank" rel="noopener noreferrer"
+                 class="text-xs font-semibold text-goldSoft hover:text-goldLight underline">
+                Buka di YouTube &rarr;
+              </a>
+            </div>
+            <h4 class="font-bold text-base sm:text-lg text-white">Usus sebagai “Otak Kedua” &amp; Analogi Servis Enjin Kereta</h4>
+            <p class="text-xs text-emerald-100/80 leading-relaxed">
+              Penjelasan saintifik tentang paksi usus–otak dan demonstrasi langsung bagaimana pembersihan jasad melancarkan kejernihan ibadah.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- KANDUNGAN TAHAP 2 -->
+      <div id="content-tab-2" class="tab-content hidden p-6 sm:p-10 grid lg:grid-cols-12 gap-8 items-center">
+        <div class="lg:col-span-7 space-y-4">
+          <span class="text-xs font-bold uppercase tracking-wider text-emerald-700">Fasa 2 &bull; Penjagaan Sistem Saraf Autonomi (ANS)</span>
+          <h3 class="text-2xl font-extrabold text-emeraldDeep">Menyelaras Frekuensi Tenang (Resonans 0.1 Hz)</h3>
+          <p class="text-sm sm:text-base text-slate-600 leading-relaxed">
+            Stres harian mengunci otak dalam mod cemas (<em>fight-or-flight</em>) dan mematikan pusat kesedaran. Ibarat radio yang berdesir kuat kerana gelombang tidak tepat, hati yang bercelaru sukar menangkap ketenangan zikir.
+          </p>
+          <ul class="space-y-2.5 text-sm text-slate-700 pt-2">
+            <li class="flex items-start gap-2.5">
+              <span class="text-emerald-700 font-bold">&#10003;</span>
+              <span><strong>Latihan Pernafasan Berirama 5–5:</strong> Teknik tarik dan hembus nafas pada frekuensi 0.1 Hz untuk mengaktifkan Saraf Vagus.</span>
+            </li>
+            <li class="flex items-start gap-2.5">
+              <span class="text-emerald-700 font-bold">&#10003;</span>
+              <span><strong>Amali Kendiri Sensor <em>Biofeedback</em> HRV:</strong> Setiap peserta memasang sendiri sensor nadi untuk melihat secara langsung di skrin peralihan saraf daripada zon stres (merah) ke koherens tenang (hijau).</span>
+            </li>
+          </ul>
+        </div>
+        <div class="lg:col-span-5 bg-emeraldDeep text-white rounded-2xl p-6 border border-emeraldLight">
+          <span class="text-[11px] uppercase tracking-widest text-goldLight font-semibold">Modul Regulasi Saraf</span>
+          <h4 class="font-bold text-lg mt-1 mb-2">Teori Polivagal &amp; Analogi Radio Berdesir</h4>
+          <p class="text-xs text-emerald-100/80 leading-relaxed mb-4">
+            Bagaimana gelombang sistem saraf menapis keupayaan kita merasai kehadiran Allah dalam solat dan zikir.
+          </p>
+          <div class="p-3 rounded-xl bg-emeraldCard text-xs text-goldLight border border-goldSoft/30 text-center">
+            Pengukuran Kendiri Sensor HRV di Dewan
+          </div>
+        </div>
+      </div>
+
+      <!-- KANDUNGAN TAHAP 3 -->
+      <div id="content-tab-3" class="tab-content hidden p-6 sm:p-10 grid lg:grid-cols-12 gap-8 items-center">
+        <div class="lg:col-span-7 space-y-4">
+          <span class="text-xs font-bold uppercase tracking-wider text-emerald-700">Fasa 3 &bull; Pembersihan Gangguan &amp; Zikir Tersusun</span>
+          <h3 class="text-2xl font-extrabold text-emeraldDeep">Membina Benteng Empat Penjuru &amp; Talaqqi Zikir</h3>
+          <p class="text-sm sm:text-base text-slate-600 leading-relaxed">
+            Al-Quran mendedahkan sumpah syaitan mengepung manusia dari <strong>empat arah — hadapan, belakang, kanan, dan kiri</strong> (Surah Al-A'raf: 16–17), serta pengecualian mutlak bagi golongan <strong><em>Al-Mukhlasin</em></strong> (Surah Sad: 82–83).
+          </p>
+          <ul class="space-y-2.5 text-sm text-slate-700 pt-2">
+            <li class="flex items-start gap-2.5">
+              <span class="text-emerald-700 font-bold">&#10003;</span>
+              <span><strong>Bimbingan Talaqqi Tiga Lapisan:</strong> Pergerakan <strong>Zikir Jahar</strong> sebagai benteng empat penjuru, penyelarasan <strong>Zikir Nafas</strong>, dan menyelam ke diamnya <strong>Zikir Khafi</strong> (Surah Al-A'raf: 205) yang terikat pada denyutan nadi.</span>
+            </li>
+            <li class="flex items-start gap-2.5">
+              <span class="text-emerald-700 font-bold">&#10003;</span>
+              <span><strong>Alat Bantu Amalan Khusus di Sesi Bengkel:</strong> Kaedah praktikal dan alat sokongan digital untuk memantau konsistensi nafas serta amalan zikir khusus akan diperkenalkan secara eksklusif semasa sesi program berlangsung.</span>
+            </li>
+          </ul>
+        </div>
+        <div class="lg:col-span-5 bg-emeraldDeep text-white rounded-2xl p-6 border border-emeraldLight">
+          <span class="text-[11px] uppercase tracking-widest text-goldLight font-semibold">Modul Talaqqi &amp; Disiplin Nadi</span>
+          <h4 class="font-bold text-lg mt-1 mb-2">Kesan Zikir pada Gelombang Otak &amp; Neuroplasticity</h4>
+          <p class="text-xs text-emerald-100/80 leading-relaxed mb-4">
+            Bagaimana getaran kalimah tauhid menenangkan gelombang otak dan mematahkan mod lamunan <em>Default Mode Network</em>.
+          </p>
+          <div class="p-3 rounded-xl bg-emeraldCard text-xs text-goldLight border border-goldSoft/30 text-center">
+            Bimbingan Talaqqi Langsung Bersama Pembimbing
+          </div>
+        </div>
+      </div>
+
+      <!-- KANDUNGAN TAHAP 4 (GABUNGAN QALBUN SALIM & FIRMAN ALLAH MENJADI REAL) -->
+      <div id="content-tab-4" class="tab-content hidden p-6 sm:p-10 grid lg:grid-cols-12 gap-8 items-start">
+        <div class="lg:col-span-7 space-y-4">
+          <span class="text-xs font-bold uppercase tracking-wider text-amber-800 bg-amber-100 px-2.5 py-1 rounded">
+            Fasa 4 &bull; Qalbun Salim, Yaqazah &amp; Firman Allah Menjadi Real
+          </span>
+          <h3 class="text-2xl font-extrabold text-emeraldDeep">Apabila Firman Allah Menjadi Kenyataan yang Dirasai</h3>
+          <p class="text-sm sm:text-base text-slate-700 leading-relaxed">
+            Melangkah merentasi tiga stesen kerohanian (<strong>Assolihin &rarr; Syuhada &rarr; Assiddiqin</strong>), kesedaran zikir kekal hidup di luar tikar sejadah—semasa memandu, bekerja, dan bersama keluarga—sehingga tiga ayat agung Allah menjadi kenyataan yang benar-benar dirasai oleh jiwa:
+          </p>
+          <div class="p-4 rounded-xl bg-amber-50/90 border-l-4 border-goldSoft text-sm text-slate-800 leading-relaxed">
+            <strong>Kenyataan Kurnia &amp; Nikmat:</strong> Hakikat ini hanya dapat dirasai atas kurnia dan nikmat Allah SWT ke atas golongan <strong>orang-orang yang benar (<em>As-Siddiqin</em>)</strong>, <strong>para penyaksi (<em>Asy-Syuhada'</em>)</strong>, dan <strong>orang-orang yang soleh (<em>As-Salihin</em>)</strong> — yang beramal soleh demi mengharap pertemuan dengan-Nya (Surah Al-Kahfi: 110).
+          </div>
+          <ul class="space-y-2 text-sm text-slate-700 pt-1">
+            <li class="flex items-start gap-2.5">
+              <span class="text-emerald-700 font-bold">&#10003;</span>
+              <span><strong>Formula Wahyu Zikir Khafi:</strong> Berpaksikan Surah Al-A'raf: 205 (<em>fī nafsika</em>) dan Surah Al-Baqarah: 152 (<em>Fadhkurūnī Adhkurkum</em>).</span>
+            </li>
+            <li class="flex items-start gap-2.5">
+              <span class="text-emerald-700 font-bold">&#10003;</span>
+              <span><strong>Perkongsian Kisah Saksi Mata:</strong> Kisah benar penghijrahan jiwa yang disaksikan sendiri oleh pengasas di Suryalaya dan Bandung sebagai renungan bekalan kepulangan abadi.</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="lg:col-span-5 bg-emeraldDeep text-white rounded-2xl p-6 border border-goldSoft/40 space-y-3.5">
+          <span class="text-[11px] uppercase tracking-widest text-goldSoft font-bold">Tiga Ayat Penyaksian Nyata (Firman Menjadi Real)</span>
+          <div class="p-3.5 rounded-xl bg-emeraldCard border border-emeraldLight">
+            <p class="font-arabic text-xl text-goldSoft text-right mb-1" dir="rtl" lang="ar">وَنَحْنُ أَقْرَبُ إِلَيْهِ مِنْ حَبْلِ الْوَرِيدِ</p>
+            <p class="text-xs text-emerald-100"><strong>1. Surah Qaf: 16</strong> — “Dan Aku lebih dekat kepadanya daripada urat lehernya sendiri.”</p>
+          </div>
+          <div class="p-3.5 rounded-xl bg-emeraldCard border border-emeraldLight">
+            <p class="font-arabic text-xl text-goldSoft text-right mb-1" dir="rtl" lang="ar">وَهُوَ مَعَكُمْ أَيْنَ مَا كُنتُمْ</p>
+            <p class="text-xs text-emerald-100"><strong>2. Surah Al-Hadid: 4</strong> — “Dan Aku bersama kamu di mana sahaja kamu berada.”</p>
+          </div>
+          <div class="p-3.5 rounded-xl bg-emeraldCard border border-emeraldLight">
+            <p class="font-arabic text-xl text-goldSoft text-right mb-1" dir="rtl" lang="ar">فَأَيْنَمَا تُوَلُّوا فَثَمَّ وَجْهُ اللَّهِ</p>
+            <p class="text-xs text-emerald-100"><strong>3. Surah Al-Baqarah: 115</strong> — “Dan di mana sahaja kamu menghadap, di situlah wajah Allah.”</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 6. SEKSYEN KUIZ SEMAKAN KENDIRI INTERAKTIF ==================== -->
+  <section id="kuiz" class="py-16 sm:py-20 px-4 sm:px-6 bg-emeraldDeep text-white">
+    <div class="max-w-3xl mx-auto">
+      <div class="text-center mb-10">
+        <span class="text-xs font-bold uppercase tracking-widest text-goldSoft">Semakan Kendiri 2 Minit</span>
+        <h2 class="text-2xl sm:text-4xl font-extrabold mt-2">Di Manakah Tahap Permulaan Anda?</h2>
+        <p class="text-sm text-emerald-100/80 mt-2">
+          Jawab 4 soalan ringkas di bawah untuk mengenal pasti fasa pemulihan yang paling sesuai untuk anda mulakan hari ini.
+        </p>
+      </div>
+
+      <form id="quizForm" class="bg-emeraldCard border border-emeraldLight rounded-3xl p-6 sm:p-8 space-y-6 shadow-xl">
+        <div>
+          <label for="q1" class="block text-sm font-bold text-goldLight mb-2">1. Bagaimanakah keadaan tenaga fizikal dan penghadaman harian anda?</label>
+          <select id="q1" class="w-full rounded-xl bg-emeraldDeep border border-emeraldLight px-4 py-3 text-sm text-white focus:outline-none focus:border-goldSoft">
+            <option value="1">Cepat letih, perut kerap kembung/sebu, dan jarang bersenam</option>
+            <option value="2">Fizikal agak baik, tetapi sukar kekal cergas sepanjang hari</option>
+            <option value="3">Sudah menjaga pemakanan Sunnah dan rutin senaman harian</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="q2" class="block text-sm font-bold text-goldLight mb-2">2. Apakah yang berlaku pada fikiran anda apabila duduk diam atau bersolat?</label>
+          <select id="q2" class="w-full rounded-xl bg-emeraldDeep border border-emeraldLight px-4 py-3 text-sm text-white focus:outline-none focus:border-goldSoft">
+            <option value="1">Fikiran melayang tanpa henti (mod autopilot) dan dada terasa sesak/gelisah</option>
+            <option value="2">Boleh tenang seketika, tetapi mudah terganggu apabila berdepan tekanan kerja</option>
+            <option value="3">Mampu menenangkan pernafasan dan mengawal gelora emosi dengan baik</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="q3" class="block text-sm font-bold text-goldLight mb-2">3. Bagaimanakah amalan zikir harian anda ketika ini?</label>
+          <select id="q3" class="w-full rounded-xl bg-emeraldDeep border border-emeraldLight px-4 py-3 text-sm text-white focus:outline-none focus:border-goldSoft">
+            <option value="1">Belum mempunyai rutin zikir yang tersusun atau masih mencari bimbingan</option>
+            <option value="2">Berzikir di lisan selepas solat, tetapi belum merasai getarannya di dalam qalb</option>
+            <option value="3">Sudah mengamalkan zikir secara konsisten dan ingin mendalami Zikir Khafi &amp; Yaqazah</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="q4" class="block text-sm font-bold text-goldLight mb-2">4. Apakah matlamat utama anda menyertai Madrasah I AM?</label>
+          <select id="q4" class="w-full rounded-xl bg-emeraldDeep border border-emeraldLight px-4 py-3 text-sm text-white focus:outline-none focus:border-goldSoft">
+            <option value="1">Mahu memulihkan kesihatan tubuh, mengurangkan stres, dan mencari ketenangan jiwa</option>
+            <option value="2">Mahu mempelajari kaedah zikir yang teratur dan membentengi diri daripada gangguan waswas</option>
+            <option value="3">Mahu menghidupkan kesedaran kehadiran Allah dalam setiap detik kehidupan (Qalbun Salim)</option>
+          </select>
+        </div>
+
+        <button type="button" onclick="kiraTahap()"
+                class="w-full py-3.5 rounded-xl bg-goldSoft text-emeraldDeep font-extrabold text-sm sm:text-base hover:bg-goldLight transition shadow-md">
+          Lihat Cadangan Tahap Permulaan Saya
+        </button>
+
+        <div id="quizResult" class="hidden p-5 rounded-2xl bg-emeraldDeep border border-goldSoft/60 text-sm space-y-2">
+          <p class="text-xs uppercase tracking-widest text-goldSoft font-bold" id="resultBadge"></p>
+          <h4 class="text-lg font-extrabold text-white" id="resultTitle"></h4>
+          <p class="text-emerald-100/90 leading-relaxed" id="resultDesc"></p>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- ==================== 7. SEKSYEN VIDEO 2: DI MANAKAH KEDUDUKAN ANDA DI SISI ALLAH? (570poTr1L9o) ==================== -->
+  <section id="video-kedudukan" class="py-16 sm:py-20 px-4 sm:px-6 bg-ivory border-b border-slate-200">
+    <div class="max-w-5xl mx-auto">
+      <div class="bg-white rounded-3xl border border-slate-200 shadow-lg overflow-hidden grid lg:grid-cols-12 items-center">
+        <!-- Bahagian Teks Renungan -->
+        <div class="lg:col-span-6 p-7 sm:p-10 space-y-4">
+          <span class="inline-block text-xs font-bold uppercase tracking-widest text-amber-900 bg-amber-100 px-3 py-1 rounded-md">
+            Renungan Penentu Arah Hidup
+          </span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-emeraldDeep leading-snug">
+            Di Manakah Kedudukan Anda di Sisi Allah?
+          </h2>
+          <p class="text-sm text-slate-700 leading-relaxed">
+            Sekurang-kurangnya <strong>17 kali sehari</strong> dalam solat, kita diajar memohon doa yang sama dalam <strong>Surah Al-Fatihah (1:6–7)</strong>: <em>“Tunjukilah kami jalan yang lurus — iaitu jalan orang-orang yang Engkau kurniakan nikmat kepada mereka, bukan jalan orang yang dimurkai (zalim) dan bukan pula jalan orang yang tersesat.”</em>
+          </p>
+          <p class="text-sm text-slate-700 leading-relaxed">
+            Dalam <strong>Surah An-Nisa' (4:69)</strong>, Allah menamakan <strong>4 golongan yang diberi nikmat</strong>: <strong>Para Nabi (<em>An-Nabiyyin</em>)</strong>, <strong>Orang-orang yang benar (<em>As-Siddiqin</em>)</strong>, <strong>Para penyaksi (<em>Asy-Syuhada'</em>)</strong>, dan <strong>Orang-orang yang soleh (<em>As-Salihin</em>)</strong>. Jika kita tidak berada di dalam salah satu daripada golongan ini, secara automatik kita tergolong dalam kelompok yang zalim atau tersesat tanpa arah kembali kepada Pencipta — melainkan kita segera membina <strong>amal soleh</strong> untuk mengharap pertemuan dengan Allah (Surah Al-Kahfi: 110).
+          </p>
+        </div>
+
+        <!-- Pemain Terbenam Video 2: Di Manakah Kedudukan Anda di Sisi Allah? (570poTr1L9o) -->
+        <div class="lg:col-span-6 p-6 sm:p-8 bg-emeraldDeep text-white h-full flex flex-col justify-center">
+          <div class="rounded-2xl overflow-hidden border border-goldSoft/40 bg-black aspect-video shadow-lg">
+            <iframe
+              class="w-full h-full"
+              src="https://www.youtube.com/embed/570poTr1L9o?rel=0"
+              title="Di Manakah Kedudukan Anda di Sisi Allah? - Madrasah I AM"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen>
+            </iframe>
+          </div>
+          <div class="mt-3.5 flex items-center justify-between text-xs text-emerald-200 px-1">
+            <span>Surah Al-Fatihah 1:6–7 &amp; An-Nisa' 4:69</span>
+            <a href="https://youtu.be/570poTr1L9o" target="_blank" rel="noopener noreferrer" class="text-goldSoft hover:text-goldLight font-semibold underline">
+              Buka di YouTube &rarr;
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 8. SEKSYEN JADUAL & PENDAFTARAN ==================== -->
+  <section id="daftar" class="py-16 sm:py-20 px-4 sm:px-6 max-w-6xl mx-auto">
+    <div class="grid lg:grid-cols-12 gap-10">
+      <div class="lg:col-span-6 space-y-6">
+        <span class="text-xs font-bold uppercase tracking-widest text-emerald-800 bg-emerald-100 px-3 py-1 rounded-md">
+          Pilih Laluan Permulaan Anda
+        </span>
+        <h2 class="text-2xl sm:text-4xl font-extrabold text-emeraldDeep">
+          Sertai Bimbingan &amp; Latihan Praktikal
+        </h2>
+        <p class="text-slate-600 leading-relaxed">
+          Mulakan langkah pertama anda bersama bimbingan langsung di Melaka atau sertai sesi ulang kaji susulan untuk memantapkan amalan zikir harian anda.
+        </p>
+
+        <div class="space-y-4">
+          <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm">
+            <div class="flex items-center justify-between mb-1">
+              <h3 class="font-bold text-emeraldDeep text-base">1. Program Intensif Dua Hari (Tahap 1 – 4)</h3>
+              <span class="text-[11px] font-bold bg-amber-100 text-amber-900 px-2.5 py-0.5 rounded-full">Pengalaman Penuh</span>
+            </div>
+            <p class="text-xs sm:text-sm text-slate-600">
+              Bengkel praktikal (80% amali) merangkumi demo ujian makanan Sunnah, pengukuran individu sensor <em>Biofeedback</em> HRV, talaqqi zikir, dan realisasi ayat penyaksian.
+            </p>
+          </div>
+
+          <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm">
+            <div class="flex items-center justify-between mb-1">
+              <h3 class="font-bold text-emeraldDeep text-base">2. Majlis Dzikir &amp; Bimbingan Mingguan</h3>
+              <span class="text-[11px] font-bold bg-emerald-100 text-emerald-800 px-2.5 py-0.5 rounded-full">Setiap Khamis</span>
+            </div>
+            <p class="text-xs sm:text-sm text-slate-600">
+              Bertempat di <strong>Pusat Bimbingan Madrasah I AM, Tambak Bugis, Melaka</strong> — latihan pernafasan HRV, talaqqi Zikir Jahar/Nafas/Khafi, dan soal jawab.
+            </p>
+          </div>
+
+          <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm">
+            <div class="flex items-center justify-between mb-1">
+              <h3 class="font-bold text-emeraldDeep text-base">3. Pengajian Pagi Online &amp; Bimbingan Susulan</h3>
+              <span class="text-[11px] font-bold bg-slate-100 text-slate-700 px-2.5 py-0.5 rounded-full">Sokongan Berterusan</span>
+            </div>
+            <p class="text-xs sm:text-sm text-slate-600">
+              Sesi ulang kaji pagi secara dalam talian dan penerangan alat bantu digital untuk mengamalkan zikir khusus yang diperkenalkan semasa program.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Borang Pendaftaran WhatsApp -->
+      <div class="lg:col-span-6">
+        <div class="bg-white rounded-3xl border border-slate-200 p-6 sm:p-8 shadow-lg">
+          <h3 class="text-xl font-extrabold text-emeraldDeep mb-1">Borang Pertanyaan &amp; Pendaftaran</h3>
+          <p class="text-xs text-slate-500 mb-6">Isi maklumat ringkas di bawah untuk berhubung terus dengan urus setia Madrasah I AM melalui WhatsApp.</p>
+
+          <form onsubmit="hantarWhatsApp(event)" class="space-y-4">
+            <div>
+              <label for="namaPeserta" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">Nama Penuh</label>
+              <input type="text" id="namaPeserta" required placeholder="Contoh: Ahmad bin Abdullah"
+                     class="w-full rounded-xl border border-slate-300 px-4 py-3 text-sm focus:outline-none focus:border-emeraldDeep" />
+            </div>
+
+            <div>
+              <label for="lokasiPeserta" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">Lokasi / Negeri</label>
+              <input type="text" id="lokasiPeserta" required placeholder="Contoh: Melaka / Kuala Lumpur / Johor"
+                     class="w-full rounded-xl border border-slate-300 px-4 py-3 text-sm focus:outline-none focus:border-emeraldDeep" />
+            </div>
+
+            <div>
+              <label for="programPilihan" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">Program Pilihan</label>
+              <select id="programPilihan" class="w-full rounded-xl border border-slate-300 px-4 py-3 text-sm focus:outline-none focus:border-emeraldDeep">
+                <option value="Program Intensif Dua Hari (Tahap 1 - 4)">Program Intensif Dua Hari (Tahap 1 – 4)</option>
+                <option value="Majlis Dzikir Mingguan (Khamis - Tambak Bugis, Melaka)">Majlis Dzikir Mingguan (Khamis - Tambak Bugis, Melaka)</option>
+                <option value="Pengajian Pagi Online & Bimbingan Susulan">Pengajian Pagi Online &amp; Bimbingan Susulan</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="catatanPeserta" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">Catatan Tambahan (Pilihan)</label>
+              <textarea id="catatanPeserta" rows="2" placeholder="Nyatakan jika ingin menyertai bersama pasangan atau keluarga..."
+                        class="w-full rounded-xl border border-slate-300 px-4 py-3 text-sm focus:outline-none focus:border-emeraldDeep"></textarea>
+            </div>
+
+            <button type="submit"
+                    class="w-full py-3.5 rounded-xl bg-emeraldDeep text-goldSoft font-extrabold text-sm sm:text-base hover:bg-emeraldCard transition shadow-md">
+              Hantar Pendaftaran ke WhatsApp
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="bg-emeraldDeep text-emerald-200/80 py-10 px-4 sm:px-6 border-t border-emeraldLight text-center text-xs space-y-2">
+    <p class="font-bold text-white text-sm tracking-wide">MADRASAH I AM — TAMBAK BUGIS, MELAKA</p>
+    <p>Sekolah Kesedaran Yaqazah &bull; Pemulihan Bersepadu Jasad, Sistem Saraf &amp; Qalb</p>
+    <p class="pt-2 text-emerald-400/70">&copy; 2026 madrasahiam.org &bull; Hak Cipta Terpelihara</p>
+  </footer>
+
+  <!-- ==================== SKRIP INTERAKTIF ==================== -->
+  <script>
+    // Kawalan menu mudah alih
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    if (mobileMenuBtn && mobileMenu) {
+      mobileMenuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+
+      document.querySelectorAll('.mobile-nav-link').forEach(link => {
+        link.addEventListener('click', () => {
+          mobileMenu.classList.add('hidden');
+        });
+      });
+    }
+
+    // Kawalan tab kurikulum 4 tahap
+    function showTab(stage) {
+      document.querySelectorAll('.tab-content').forEach(el => el.classList.add('hidden'));
+      document.querySelectorAll('.tab-btn').forEach(btn => {
+        btn.classList.remove('border-emeraldDeep', 'text-emeraldDeep', 'bg-white', 'font-bold');
+        btn.classList.add('border-transparent', 'text-slate-500', 'font-semibold');
+      });
+
+      document.getElementById('content-tab-' + stage).classList.remove('hidden');
+      const activeBtn = document.getElementById('btn-tab-' + stage);
+      activeBtn.classList.remove('border-transparent', 'text-slate-500', 'font-semibold');
+      activeBtn.classList.add('border-emeraldDeep', 'text-emeraldDeep', 'bg-white', 'font-bold');
+    }
+
+    // Pengiraan kuiz semakan kendiri
+    function kiraTahap() {
+      const s1 = parseInt(document.getElementById('q1').value, 10);
+      const s2 = parseInt(document.getElementById('q2').value, 10);
+      const s3 = parseInt(document.getElementById('q3').value, 10);
+      const s4 = parseInt(document.getElementById('q4').value, 10);
+      const jumlah = s1 + s2 + s3 + s4;
+
+      const badge = document.getElementById('resultBadge');
+      const title = document.getElementById('resultTitle');
+      const desc = document.getElementById('resultDesc');
+
+      if (jumlah <= 6) {
+        badge.textContent = 'Cadangan Permulaan: Tahap 1 & Tahap 2 (Stesen Assolihin)';
+        title.textContent = 'Fokus Utama: Pemulihan Kenderaan Jasad & Penenangan Saraf';
+        desc.textContent = 'Tubuh dan sistem saraf anda memerlukan pembersihan asas terlebih dahulu sebelum memikul latihan batin yang berat. Mulakan dengan rutin 4 teras pemakanan Sunnah, latihan pernafasan 5–5 (0.1 Hz), dan pengukuran sensor Biofeedback HRV di sesi bimbingan kami.';
+      } else if (jumlah <= 9) {
+        badge.textContent = 'Cadangan Permulaan: Tahap 2 & Tahap 3 (Stesen Assolihin)';
+        title.textContent = 'Fokus Utama: Regulasi Koherens HRV & Talaqqi Zikir Tersusun';
+        desc.textContent = 'Asas fizikal anda sudah bersedia. Langkah seterusnya ialah menyelaraskan frekuensi pernafasan dengan denyutan nadi serta mempelajari benteng empat penjuru Zikir Jahar, Zikir Nafas, dan Zikir Khafi secara bertalaqqi.';
+      } else {
+        badge.textContent = 'Cadangan Permulaan: Tahap 4 (Stesen Syuhada & Assiddiqin)';
+        title.textContent = 'Fokus Utama: Pemantapan Yaqazah, Qalbun Salim & Realisasi Ayat Penyaksian';
+        desc.textContent = 'Anda sudah mempunyai disiplin asas yang baik. Sertai Program Intensif Dua Hari dan Majlis Dzikir mingguan di Tambak Bugis untuk memperhalusi Zikir Khafi yang menyatu dengan nadi sehingga firman Allah benar-benar dirasai dalam setiap detik kehidupan.';
+      }
+
+      document.getElementById('quizResult').classList.remove('hidden');
+    }
+
+    // Penghantaran pendaftaran terus ke WhatsApp rasmi Madrasah I AM (60182119135)
+    function hantarWhatsApp(e) {
+      e.preventDefault();
+      const nama = document.getElementById('namaPeserta').value.trim();
+      const lokasi = document.getElementById('lokasiPeserta').value.trim();
+      const program = document.getElementById('programPilihan').value;
+      const catatan = document.getElementById('catatanPeserta').value.trim();
+
+      const mesej = `Assalamualaikum Madrasah I AM,%0A%0ASaya berminat untuk mendaftar / bertanya mengenai bimbingan:%0A*Nama:* ${encodeURIComponent(nama)}%0A*Lokasi:* ${encodeURIComponent(lokasi)}%0A*Program:* ${encodeURIComponent(program)}%0A*Catatan:* ${encodeURIComponent(catatan || '-')}`;
+      window.open(`https://wa.me/60182119135?text=${mesej}`, '_blank', 'noopener,noreferrer');
+    }
+  </script>
+</body>
+</html>
