@@ -1,0 +1,15 @@
+name = "madrasah-chat"
+main = "src/index.js"
+compatibility_date = "2026-01-01"
+
+# Bahan rujukan (.md) diimport sebagai teks.
+[[rules]]
+type = "Text"
+globs = ["**/*.md"]
+fallback = true
+
+# Tetapkan secara selamat, JANGAN tulis nilai di sini:
+#   npx wrangler secret put ANTHROPIC_API_KEY
+# Model pilihan (pilihan, lalai claude-sonnet-5-5):
+# [vars]
+# MODEL = "claude-haiku-5-5"
