@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pendaftaran • Madrasah I AM</title>
+  <meta name="robots" content="index, follow">
+  <style>
+    :root { --teal: #0f766e; --teal-dark: #115e59; --bg: #f8fafc; --line: #cbd5e1; --muted: #64748b; }
+    * { box-sizing: border-box; }
+    body { margin: 0; font: 16px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif; background: var(--bg); color: #0f172a; }
+    main { max-width: 640px; margin: 0 auto; padding: 32px 20px 64px; }
+    h1 { font-size: 28px; margin: 0 0 8px; }
+    .lead { color: var(--muted); margin: 0 0 24px; }
+    .card { background: #fff; border: 1px solid #e2e8f0; border-radius: 16px; padding: 20px; margin-bottom: 20px; }
+    .card h2 { font-size: 18px; margin: 0 0 12px; color: var(--teal-dark); }
+    ul.info { margin: 0; padding-left: 20px; }
+    ul.info li { margin-bottom: 6px; }
+    label { display: block; font-weight: 600; margin: 14px 0 6px; }
+    input, select, textarea { width: 100%; font: inherit; padding: 10px 12px; border: 1px solid var(--line); border-radius: 10px; background: #fff; }
+    textarea { min-height: 80px; resize: vertical; }
+    .row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    .check { display: flex; gap: 10px; align-items: flex-start; margin-top: 14px; font-weight: 400; }
+    .check input { width: auto; margin-top: 5px; }
+    .hp { position: absolute; left: -9999px; height: 0; width: 0; overflow: hidden; }
+    button { margin-top: 20px; width: 100%; background: var(--teal); color: #fff; border: 0; border-radius: 12px; padding: 14px; font: 600 16px system-ui, sans-serif; cursor: pointer; }
+    button:disabled { opacity: .6; cursor: not-allowed; }
+    button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible { outline: 3px solid #99f6e4; outline-offset: 2px; }
+    .msg { margin-top: 16px; padding: 12px 14px; border-radius: 10px; display: none; }
+    .msg.ok { display: block; background: #ecfdf5; border: 1px solid #a7f3d0; color: #065f46; }
+    .msg.err { display: block; background: #fef2f2; border: 1px solid #fecaca; color: #991b1b; }
+    .note { font-size: 14px; color: var(--muted); }
+  </style>
+</head>
+<body>
+<main>
+  <h1>Pendaftaran Program</h1>
+  <p class="lead">Isi borang di bawah. Pasukan Madrasah I AM akan menghubungi anda untuk pengesahan.</p>
+
+  <section class="card" aria-labelledby="maklumat">
+    <h2 id="maklumat">Maklumat Program</h2>
+    <ul class="info">
+      <li>Diadakan 3 kali sebulan pada hujung minggu, bermula tahun 2027.</li>
+      <li>Lokasi buat masa ini ialah di Melaka. Lokasi tetap sedang dinilai.</li>
+      <li>Yuran RM500 seorang. Termasuk penginapan bilik kongsi (2 orang sebilik), makan serta minum 4 kali, dan sumbangan pembangunan Madrasah I AM RM200.</li>
+      <li>Rebate RM100 untuk mereka yang booking awal.</li>
+      <li>Syarat: orang dewasa berusia lebih 20 tahun. Lelaki dan wanita. Tempat diberi mengikut siapa dahulu.</li>
+      <li>Boleh masuk bilik selepas Jumaat dan hadir sebelum program bermula.</li>
+    </ul>
+    <p class="note">Untuk butiran lanjut, sila hubungi pasukan kami.</p>
+  </section>
+
+  <form id="borang" class="card" novalidate>
+    <h2>Maklumat Peserta</h2>
+
+    <label for="nama">Nama penuh</label>
+    <input id="nama" name="nama" type="text" maxlength="120" required autocomplete="name">
+
+    <div class="row">
+      <div>
+        <label for="emel">Emel</label>
+        <input id="emel" name="emel" type="email" maxlength="160" required autocomplete="email">
+      </div>
+      <div>
+        <label for="telefon">No. telefon / WhatsApp</label>
+        <input id="telefon" name="telefon" type="tel" maxlength="30" required autocomplete="tel">
+      </div>
+    </div>
+
+    <div class="row">
+      <div>
+        <label for="umur">Umur</label>
+        <input id="umur" name="umur" type="number" min="21" max="120" inputmode="numeric">
+      </div>
+      <div>
+        <label for="jantina">Jantina</label>
+        <select id="jantina" name="jantina">
+          <option value="">Pilih</option>
+          <option value="lelaki">Lelaki</option>
+          <option value="wanita">Wanita</option>
+        </select>
+      </div>
+    </div>
+
+    <label for="negeri">Negeri / daerah</label>
+    <input id="negeri" name="negeri" type="text" maxlength="60">
+
+    <label for="catatan">Catatan (pilihan)</label>
+    <textarea id="catatan" name="catatan" maxlength="500"></textarea>
+
+    <label class="check">
+      <input id="booking_awal" name="booking_awal" type="checkbox">
+      <span>Saya ingin booking awal dan layak rebate RM100.</span>
+    </label>
+
+    <label class="check">
+      <input id="setuju" name="setuju" type="checkbox" required>
+      <span>Saya bersetuju data saya digunakan oleh pasukan Madrasah I AM untuk tujuan pendaftaran dan dihubungi berkaitan program ini.</span>
+    </label>
+
+    <!-- Ruangan perangkap untuk bot. Jangan isi. -->
+    <div class="hp" aria-hidden="true">
+      <label for="website">Laman web</label>
+      <input id="website" name="website" type="text" tabindex="-1" autocomplete="off">
+    </div>
+
+    <button id="hantar" type="submit">Hantar Pendaftaran</button>
+    <div id="mesej" class="msg" role="status" aria-live="polite"></div>
+  </form>
+
+  <section id="bayaran" class="card" hidden>
+    <h2>Langkah Seterusnya: Bayaran</h2>
+    <p id="bayaran-teks"></p>
+  </section>
+</main>
+
+<script>
+  (function () {
+    // Tetapkan selepas pautan ToyyibPay tersedia. Kosongkan jika belum ada.
+    var TOYYIBPAY_URL = "";
+    var ENDPOINT = "https://madrasah-chat.serbabaktiglobal.workers.dev/daftar";
+
+    var form = document.getElementById("borang");
+    var btn = document.getElementById("hantar");
+    var msg = document.getElementById("mesej");
+    var bayaran = document.getElementById("bayaran");
+    var bayaranTeks = document.getElementById("bayaran-teks");
+
+    function show(kind, text) {
+      msg.className = "msg " + kind;
+      msg.textContent = text;
+    }
+
+    form.addEventListener("submit", async function (e) {
+      e.preventDefault();
+      show("", "");
+      msg.className = "msg";
+
+      var data = {
+        nama: form.nama.value,
+        emel: form.emel.value,
+        telefon: form.telefon.value,
+        umur: form.umur.value,
+        jantina: form.jantina.value,
+        negeri: form.negeri.value,
+        catatan: form.catatan.value,
+        booking_awal: form.booking_awal.checked,
+        setuju: form.setuju.checked,
+        website: form.website.value
+      };
+
+      if (!data.nama.trim() || !data.emel.trim() || !data.telefon.trim()) {
+        show("err", "Sila lengkapkan nama, emel dan telefon.");
+        return;
+      }
+      if (!data.setuju) {
+        show("err", "Sila tandakan persetujuan sebelum menghantar.");
+        return;
+      }
+
+      btn.disabled = true;
+      btn.textContent = "Menghantar...";
+      try {
+        var res = await fetch(ENDPOINT, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(data)
+        });
+        var out = await res.json().catch(function () { return {}; });
+        if (!res.ok) throw new Error(out.error || "Ralat tidak diketahui.");
+
+        form.reset();
+        show("ok", "Terima kasih. Pendaftaran anda telah diterima.");
+        bayaran.hidden = false;
+        bayaranTeks.textContent = TOYYIBPAY_URL
+          ? "Sila buat bayaran melalui pautan ini: "
+          : "Pautan bayaran akan dimaklumkan oleh pasukan kami melalui emel atau telefon.";
+        if (TOYYIBPAY_URL) {
+          var a = document.createElement("a");
+          a.href = TOYYIBPAY_URL;
+          a.rel = "noopener";
+          a.textContent = "Bayar melalui ToyyibPay";
+          bayaranTeks.appendChild(a);
+        }
+      } catch (err) {
+        show("err", "Maaf, pendaftaran belum berjaya. Sila cuba lagi atau hubungi pasukan kami.");
+      } finally {
+        btn.disabled = false;
+        btn.textContent = "Hantar Pendaftaran";
+      }
+    });
+  })();
+</script>
+</body>
+</html>
