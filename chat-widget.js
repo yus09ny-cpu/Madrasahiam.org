@@ -46,8 +46,28 @@
   }
 
   function addMessage(log, text, kind) {
-    // textContent sahaja, supaya HTML dalam jawapan tidak dilaksanakan.
-    const node = el("div", { class: "mi-msg " + kind, text: text });
+    // Teks dipapar dengan textContent, supaya HTML dalam jawapan tidak dilaksanakan.
+    // Hanya URL http(s) dijadikan pautan yang boleh diklik.
+    const node = el("div", { class: "mi-msg " + kind });
+    const urlPattern = /https?:\/\/[^\s<>"']+/g;
+    let last = 0;
+    let match;
+    while ((match = urlPattern.exec(text)) !== null) {
+      // Buang tanda baca di hujung URL (contoh titik atau koma).
+      let url = match[0].replace(/[.,;:!?)]+$/, "");
+      if (match.index > last) {
+        node.appendChild(document.createTextNode(text.slice(last, match.index)));
+      }
+      const a = el("a", { href: url, target: "_blank", rel: "noopener noreferrer", text: url });
+      a.style.color = "inherit";
+      a.style.textDecoration = "underline";
+      node.appendChild(a);
+      last = match.index + url.length;
+      urlPattern.lastIndex = last;
+    }
+    if (last < text.length) {
+      node.appendChild(document.createTextNode(text.slice(last)));
+    }
     log.appendChild(node);
     log.scrollTop = log.scrollHeight;
     return node;
