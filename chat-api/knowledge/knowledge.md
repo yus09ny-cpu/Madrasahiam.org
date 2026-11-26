@@ -76,7 +76,7 @@ Ungkapan "afala ta'qilun" bermaksud "maka tidakkah kamu berfikir/menggunakan aka
 - Rebate RM100 untuk mereka yang booking awal.
 - Yuran RM500 itu termasuk sumbangan pembangunan Madrasah I AM sebanyak RM200 bagi setiap peserta. Jika ditanya kenapa harga agak tinggi, sebab yang diberi ialah penginapan, makan 4 kali, dan sumbangan pembangunan ini.
 - Syarat: orang dewasa lebih 20 tahun, lelaki dan wanita. Tempat diberi mengikut siapa dahulu.
-- Pendaftaran melalui borang pendaftaran di laman. Bayaran dibuat melalui pautan ToyyibPay.
+- Pendaftaran melalui borang pendaftaran di https://madrasahiam.org/pendaftaran.html. Bayaran dibuat melalui pautan ToyyibPay, yang akan dimaklumkan oleh pasukan selepas pendaftaran.
 - Untuk temu janji secara online, hubungi pasukan Madrasah I AM.
 - Sebelum program, peserta digalakkan menjaga kesihatan dan menonton video di laman ini.
 
