@@ -62,6 +62,24 @@ Ungkapan "afala ta'qilun" bermaksud "maka tidakkah kamu berfikir/menggunakan aka
 - Analogi dalam bahan ialah alat bantu pemahaman, bukan tafsiran rasmi.
 - Ayat dan hadis dalam bahan masih perlu disemak oleh pihak berautoriti sebelum diterbitkan secara meluas.
 
+## Pengasas
+- Pengasas Madrasah I AM ialah seorang dewasa yang berusia lebih 60 tahun.
+- Pengasas ialah mahasiswa Pengajian Islam dalam tahun terakhir untuk mendapat tauliah.
+- Pengasas berguru dengan Kh Ahmad Shobihul Tajul Arifin (Abah Anom).
+- Maklumat ini dimaklumkan oleh pengasas sendiri.
+
+## Jadual, Kos dan Penginapan (dimaklumkan oleh pengasas)
+- Program diadakan 3 kali sebulan pada hujung minggu, bermula tahun 2027.
+- Lokasi buat masa ini ialah di Melaka. Lokasi tetap masih dinilai.
+- Yuran: RM500 seorang. Termasuk penginapan bilik kongsi (1 bilik untuk 2 orang), dan makan serta minum 4 kali.
+- Peserta boleh masuk bilik selepas Jumaat dan hadir di tempat sebelum program bermula.
+- Rebate RM100 untuk mereka yang booking awal.
+- Yuran RM200 sumbangan pembangunan Madrasah I AM dikenakan kepada setiap peserta, dan ia dinyatakan sebagai sebab yuran agak tinggi.
+- Syarat: orang dewasa lebih 20 tahun, lelaki dan wanita. Tempat diberi mengikut siapa dahulu.
+- Pendaftaran melalui borang pendaftaran di laman. Bayaran dibuat melalui pautan ToyyibPay.
+- Untuk temu janji secara online, hubungi pasukan Madrasah I AM.
+- Sebelum program, peserta digalakkan menjaga kesihatan dan menonton video di laman ini.
+
 ## Perkara Yang Belum Disahkan (JANGAN nyatakan sebagai fakta)
 - Nama dan fungsi "Zikir Nafas (WFM)" masih belum disahkan.
 - Tatacara zikir mingguan dan bulanan tidak didedahkan di sini. Ia disampaikan kepada peserta selepas mengikuti program.

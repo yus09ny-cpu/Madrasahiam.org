@@ -8,6 +8,13 @@ type = "Text"
 globs = ["**/*.md"]
 fallback = true
 
+# Storan pendaftaran. Cipta dahulu:
+#   npx wrangler kv namespace create REGISTRATIONS
+# Salin "id" yang keluar dan tampal di bawah.
+[[kv_namespaces]]
+binding = "REGISTRATIONS"
+id = "REPLACE_WITH_KV_ID"
+
 # Tetapkan secara selamat, JANGAN tulis nilai di sini:
 #   npx wrangler secret put ANTHROPIC_API_KEY
 # Model pilihan (pilihan, lalai claude-sonnet-5-5):
