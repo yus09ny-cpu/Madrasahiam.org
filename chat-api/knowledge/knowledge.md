@@ -74,7 +74,7 @@ Ungkapan "afala ta'qilun" bermaksud "maka tidakkah kamu berfikir/menggunakan aka
 - Yuran: RM500 seorang. Termasuk penginapan bilik kongsi (1 bilik untuk 2 orang), dan makan serta minum 4 kali.
 - Peserta boleh masuk bilik selepas Jumaat dan hadir di tempat sebelum program bermula.
 - Rebate RM100 untuk mereka yang booking awal.
-- Yuran RM200 sumbangan pembangunan Madrasah I AM dikenakan kepada setiap peserta, dan ia dinyatakan sebagai sebab yuran agak tinggi.
+- Yuran RM500 itu termasuk sumbangan pembangunan Madrasah I AM sebanyak RM200 bagi setiap peserta. Jika ditanya kenapa harga agak tinggi, sebab yang diberi ialah penginapan, makan 4 kali, dan sumbangan pembangunan ini.
 - Syarat: orang dewasa lebih 20 tahun, lelaki dan wanita. Tempat diberi mengikut siapa dahulu.
 - Pendaftaran melalui borang pendaftaran di laman. Bayaran dibuat melalui pautan ToyyibPay.
 - Untuk temu janji secara online, hubungi pasukan Madrasah I AM.
