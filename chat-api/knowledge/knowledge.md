@@ -63,10 +63,8 @@ Ungkapan "afala ta'qilun" bermaksud "maka tidakkah kamu berfikir/menggunakan aka
 - Ayat dan hadis dalam bahan masih perlu disemak oleh pihak berautoriti sebelum diterbitkan secara meluas.
 
 ## Pengasas
-- Pengasas Madrasah I AM ialah seorang dewasa yang berusia lebih 60 tahun.
-- Pengasas ialah mahasiswa Pengajian Islam dalam tahun terakhir untuk mendapat tauliah.
-- Pengasas berguru dengan Kh Ahmad Shobihul Tajul Arifin (Abah Anom).
-- Maklumat ini dimaklumkan oleh pengasas sendiri.
+- Pengasas tidak mahu dikenali secara terbuka. Jangan sebut nama, umur, status pengajian atau guru pengasas.
+- Jika pengunjung ingin berhubung dengan pengasas, minta nama dan nombor telefon mereka. Pengasas akan menghubungi secara peribadi.
 
 ## Jadual, Kos dan Penginapan (dimaklumkan oleh pengasas)
 - Program diadakan 3 kali sebulan pada hujung minggu, bermula tahun 2027.
